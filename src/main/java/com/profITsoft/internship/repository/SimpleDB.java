@@ -1,11 +1,13 @@
-package com.profITsoft.internship;
+package com.profITsoft.internship.repository;
 
 import com.profITsoft.internship.entity.User;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class SimpleDB {
-    public static List<User> userList = List.of(
+    private static final List<User> USER_LIST = List.of(
             new User("User1", "Login1", "password1"),
             new User("User2", "Login2", "password2"),
             new User("User3", "Login3", "password3"),
@@ -14,4 +16,9 @@ public class SimpleDB {
             new User("User6", "Login6", "password6"),
             new User("User7", "Login7", "password7")
     );
+
+    public List<User> getSimpleUserDB(){
+        return USER_LIST;
+    }
+
 }

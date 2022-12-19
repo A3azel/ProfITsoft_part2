@@ -8,7 +8,7 @@ import lombok.Data;
 @Data
 public class UserDto {
     private String login;
-    public String username;
+    private String username;
 
     public static UserDto createUserDTO(User user){
         return UserDto.builder()

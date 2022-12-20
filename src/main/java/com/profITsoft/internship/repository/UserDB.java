@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class SimpleDB {
+public class UserDB {
     private static final List<User> USER_LIST = List.of(
             new User("User1", "Login1", "password1"),
             new User("User2", "Login2", "password2"),
@@ -17,7 +17,7 @@ public class SimpleDB {
             new User("User7", "Login7", "password7")
     );
 
-    public List<User> getSimpleUserDB(){
+    public List<User> getAllUsers(){
         return USER_LIST;
     }
 

@@ -7,6 +7,7 @@ import java.util.List;
 
 @Repository
 public class UserDB {
+
     private static final List<User> USER_LIST = List.of(
             new User("User1", "Login1", "password1"),
             new User("User2", "Login2", "password2"),

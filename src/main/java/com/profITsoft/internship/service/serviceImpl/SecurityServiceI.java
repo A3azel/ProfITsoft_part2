@@ -22,4 +22,5 @@ public class SecurityServiceI implements SecurityService {
                 .filter(x -> x.getLogin().equals(login) && x.getPassword().equals(password))
                 .findFirst().orElse(null);
     }
+
 }

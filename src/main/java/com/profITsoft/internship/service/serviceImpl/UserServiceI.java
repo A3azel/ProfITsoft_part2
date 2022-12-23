@@ -19,6 +19,7 @@ public class UserServiceI implements UserService {
     public UserServiceI(UserDB userDB) {
         this.userDB = userDB;
     }
+
     @Override
     public List<UserDto> findAllUserDTOs() {
         List<User> userList = userDB.getAllUsers();
@@ -26,4 +27,6 @@ public class UserServiceI implements UserService {
                 .map(UserDto::createUserDTO)
                 .collect(Collectors.toList());
     }
+
 }
+

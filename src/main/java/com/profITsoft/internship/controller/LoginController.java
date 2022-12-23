@@ -38,4 +38,5 @@ public class LoginController {
         session.setAttribute("user", selectedUser);
         return "redirect:/user";
     }
+
 }
